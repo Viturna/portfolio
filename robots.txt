@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://thomas-riquier.viturna.fr/sitemap.xml

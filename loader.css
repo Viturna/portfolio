@@ -1,0 +1,71 @@
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100dvh;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 9999;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.loader-title {
+    font-size: 96px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    color: #222222;
+    padding: 32px 0;
+}
+
+.loader span {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #222222;
+    font-weight: 400;
+}
+
+@media screen and (min-width:768px) and (max-width: 1024px) {
+
+    .loader-title {
+        font-size: 86px;
+    }
+
+    .loader span {
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (min-width:425px) and (max-width: 768px) {
+
+    .loader-title {
+        font-size: 46px;
+    }
+
+    .loader span {
+        font-size: 22px;
+    }
+
+}
+
+@media screen and (min-width:0px) and (max-width: 426px) {
+
+    .loader-title {
+        font-size: 32px;
+    }
+
+    .loader span {
+        font-size: 18px;
+    }
+
+}

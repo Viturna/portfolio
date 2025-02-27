@@ -1,0 +1,544 @@
+html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+.title-container span {
+    display: inline-block;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+
+.title-container {
+    font-size: 128px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF;
+    padding: 32px 0;
+}
+
+h2 {
+    margin: 32px 0;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+p {
+    font-weight: 500;
+    color: #424242;
+    font-size: 20px;
+    line-height: 130%;
+}
+
+h3 {
+    margin: 8px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #424242;
+    font-size: 24px;
+    line-height: 130%;
+}
+
+
+body {
+    overflow-y: visible;
+    position: relative;
+    height: unset;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.container {
+    width: 200%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.img-top {
+    min-width: 100vw;
+    height: 100dvh;
+}
+
+.title-container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+    height: 180dvh;
+    gap: 32px;
+}
+
+
+
+/* page content */
+.info-container {
+    padding: 124px 10vw 96px 10vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-project-info {
+    margin: 64px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-project-info {
+    max-width: 24%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.inner-box-project-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.img-project-info {
+    margin-top: 64px;
+}
+
+
+.description-container {
+    padding: 152px 10vw 64px 10vw;
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+    background-color: #F7F7F7;
+}
+
+.box-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.box-text h2 {
+    margin: 0;
+}
+
+.box-text p {
+    width: 70%;
+    max-width: 1000px;
+}
+
+
+
+.flex-da {
+    display: flex;
+    gap: 32px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 30%;
+    height: 240px;
+}
+
+.logo {
+    perspective: 1000px;
+    /* Ajoute de la profondeur pour un meilleur effet de flip */
+}
+
+.logo img {
+    transition: transform 0.6s ease;
+    /* Ajoute une transition fluide */
+}
+
+.logo:hover img {
+    transform: rotateY(360deg);
+    /* Effectue une rotation sur l'axe Y au hover */
+}
+
+.container-color {
+    width: 70%;
+    height: 240px;
+    border-radius: 10px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 0 32px;
+}
+
+.details-container {
+    width: calc(100% - 128px);
+    height: fit-content;
+    border-radius: 10px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 96px 64px;
+}
+
+.details-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.details-title {
+    text-transform: uppercase;
+    color: #222222;
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.details-text {
+    font-size: 22px;
+    color: #424242;
+    font-weight: 500;
+}
+
+.box-color {
+    max-width: 140px;
+    width: 20%;
+    background-color: #f7f7f7;
+    aspect-ratio: 1/1;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.color-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.flex-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+    .title-container {
+        font-size: 48px;
+        padding: 24px 0;
+    }
+
+    .title-container span,
+    h1 {
+        text-wrap: nowrap;
+    }
+
+    h2 {
+        margin: 24px 0;
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .title-container {
+        height: 100dvh;
+    }
+
+
+
+    /* page content */
+    .info-container {
+        padding: 48px 5vw 96px 5vw;
+    }
+
+    .flex-title {
+        flex-direction: column;
+    }
+
+    .flex-project-info {
+        margin: 64px 0;
+        gap: 24px;
+        flex-direction: column;
+    }
+
+    .box-project-info {
+        max-width: 100%;
+        gap: 24px;
+    }
+
+    .inner-box-project-info {
+        gap: 16px;
+    }
+
+    .img-project-info {
+        object-fit: cover;
+        margin-top: 24px;
+        height: 200px;
+    }
+
+
+    .description-container {
+        padding: 82px 5vw 64px 5vw;
+        gap: 64px;
+    }
+
+    .box-text {
+        gap: 32px;
+        flex-direction: column;
+    }
+
+    .box-text p {
+        width: 100%;
+    }
+
+
+
+    .flex-da {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .container-color {
+        width: calc(100% - 32px);
+        height: fit-content;
+        flex-wrap: wrap;
+        gap: 24px;
+        padding: 48px 16px;
+    }
+
+    .details-container {
+        width: calc(100% - 64px);
+        flex-direction: column;
+        gap: 32px;
+        align-items: start;
+        padding: 48px 32px;
+    }
+
+    .details-box {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .details-title {
+        font-size: 20px;
+    }
+
+    .details-text {
+        font-size: 18px;
+    }
+
+    .box-color {
+        width: 40%;
+        background-color: #f7f7f7;
+        aspect-ratio: 1/1;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .flex-img {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .flex-img img {
+        width: 100%;
+    }
+
+    .container-flex {
+        gap: 24px;
+    }
+
+    .link-project {
+        width: fit-content;
+        font-size: 20px;
+        color: #424242;
+        font-weight: 500;
+    }
+
+    .link-project svg {
+        scale: 0.8;
+    }
+
+    .flex-end {
+        gap: 32px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width: 1024px) {
+    .title-container {
+        font-size: 82px;
+        padding: 24px 0;
+    }
+
+    .title-container span,
+    h1 {
+        text-wrap: nowrap;
+    }
+
+    h2 {
+        margin: 24px 0;
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 19px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    .title-container {
+        height: 150dvh;
+    }
+
+
+
+    /* page content */
+    .info-container {
+        padding: 64px 8vw 96px 8vw;
+    }
+
+    .flex-project-info {
+        margin: 64px 0;
+        gap: 24px;
+        flex-direction: column;
+    }
+
+    .box-project-info {
+        max-width: 70%;
+        gap: 24px;
+    }
+
+    .inner-box-project-info {
+        gap: 16px;
+    }
+
+    .img-project-info {
+        object-fit: cover;
+        margin-top: 24px;
+    }
+
+
+    .description-container {
+        padding: 82px 8vw 64px 8vw;
+        gap: 64px;
+    }
+
+    .box-text {
+        gap: 32px;
+        flex-direction: column;
+    }
+
+    .box-text p {
+        width: 100%;
+    }
+
+
+
+    .flex-da {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .container-color {
+        width: calc(100% - 32px);
+        height: fit-content;
+        flex-wrap: wrap;
+        gap: 24px;
+        padding: 48px 16px;
+    }
+
+    .details-container {
+        width: calc(100% - 64px);
+        flex-direction: column;
+        gap: 24px;
+        align-items: start;
+        padding: 48px 32px;
+    }
+
+    .details-box {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .details-title {
+        font-size: 20px;
+    }
+
+    .details-text {
+        font-size: 18px;
+    }
+
+    .box-color {
+        width: 20%;
+        background-color: #f7f7f7;
+        aspect-ratio: 1/1;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .flex-img {
+        gap: 24px;
+    }
+
+    .container-flex {
+        gap: 24px;
+    }
+}
