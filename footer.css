@@ -45,11 +45,14 @@ footer menu ul li a:hover {
 }
 
 .contact-footer {
+    padding-right: 16px;
     font-size: 36px;
     font-weight: 800;
     color: #222222;
     text-transform: uppercase;
     margin-bottom: 8px;
+    word-wrap: break-word;
+
 }
 
 .left-part-footer {
@@ -179,7 +182,6 @@ footer .button:hover {
 
     .contact-footer {
         font-size: 30px;
-        text-wrap: pretty;
     }
 
     .right-part-footer {
