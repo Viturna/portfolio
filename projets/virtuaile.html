@@ -2,101 +2,109 @@
 <html lang="fr">
 
 <head>
-    <!-- Balises pour les navigateurs -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Balises pour une indexation optimisée -->
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
     <meta name="bingbot" content="index, follow">
-
-    <!-- CSS -->
 
     <link rel="stylesheet" href="../reset.css?ver=0.3" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../header.css?ver=0.3" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../footer.css?ver=0.4" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../loader.css?ver=0.3" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../projets.css?ver=0.3" rel="stylesheet" type="text/css">
-
     <link rel="preload" href="../src/font/albert-sans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
-    <!-- META -->
-    <title>Création du Site Web et Supports de Communication pour le BDE MMI Bordeaux | Portfolio Thomas Riquier</title>
+    <title>Virtu'aile : Expérience Collaborative 3D | Bacchanight 2025 | Portfolio Thomas Riquier</title>
     <meta name="description"
-        content="Découvrez mon projet de création d'un site web complet pour le BDE MMI Bordeaux. Développement sur SvelteKit, avec une approche UI/UX moderne et des supports visuels pour renforcer la communication de l'association étudiante.">
+        content="Découvrez Virtu'aile, une fresque numérique collaborative créée pour la Bacchanight 2025 au MusBA de Bordeaux. Une expérience 3D immersive où le visiteur devient artiste.">
     <meta name="keywords"
-        content="BDE MMI Bordeaux, création site web, développement SvelteKit, supports de communication, gestion de projet, UI/UX, développement web, gestion équipe, communication étudiante">
+        content="Virtu'aile, Bacchanight 2025, MusBA Bordeaux, fresque numérique, 3D collaborative, UI/UX Design, Three.js, expérience immersive, Thomas Riquier, MMI Bordeaux">
     <meta name="author" content="Thomas Riquier">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="../src/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="../src/favicon/favicon.svg" />
     <link rel="shortcut icon" href="../src/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="../src/favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Thomas Riquier Portfolio" />
     <link rel="manifest" href="../src/favicon/site.webmanifest" />
-    <!-- Balises de liaison -->
+    <link rel="canonical" href="https://thomas-riquier.viturna.fr/projets/virtuaile.html">
 
-    <!-- Balises pour les réseaux sociaux -->
     <meta property="og:locale" content="fr_FR">
     <meta property="og:type" content="website">
-    <meta property="og:title"
-        content="Création du Site Web et Supports de Communication pour le BDE MMI Bordeaux | Portfolio Thomas Riquier">
+    <meta property="og:title" content="Virtu'aile : Expérience Collaborative 3D | Bacchanight 2025">
     <meta property="og:site_name" content="Thomas Riquier - Portfolio">
-    <meta property="og:url" content="https://thomas-riquier.viturna.fr">
+    <meta property="og:url" content="https://thomas-riquier.viturna.fr/projets/virtuaile.html">
     <meta property="og:description"
-        content="Découvrez mon projet de création d'un site web complet pour le BDE MMI Bordeaux. Développement sur SvelteKit, avec une approche UI/UX moderne et des supports visuels pour renforcer la communication de l'association étudiante.">
+        content="Découvrez Virtu'aile, une fresque numérique immersive réalisée pour le Musée des Beaux-Arts de Bordeaux.">
     <meta property="og:image" content="https://thomas-riquier.viturna.fr/src/img/profil-logo.webp">
 
-    <!-- Balises pour Twitter -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@thomas-riquier">
-    <meta name="twitter:title"
-        content="Création du Site Web et Supports de Communication pour le BDE MMI Bordeaux | Portfolio Thomas Riquier">
+    <meta name="twitter:title" content="Virtu'aile : Expérience Collaborative 3D | Bacchanight 2025">
     <meta name="twitter:description"
-        content="Découvrez mon projet de création d'un site web complet pour le BDE MMI Bordeaux. Développement sur SvelteKit, avec une approche UI/UX moderne et des supports visuels pour renforcer la communication de l'association étudiante.">
+        content="Découvrez Virtu'aile, une fresque numérique immersive réalisée pour le Musée des Beaux-Arts de Bordeaux.">
     <meta name="twitter:url" content="https://thomas-riquier.viturna.fr">
-    <meta property="twitter:image" content="https://thomas-riquier.viturna.fr/src/img/profil-logo.webp">
 
-    <!-- js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/split-type" defer></script>
 
     <style>
-        .title-container,
+        .logo img {
+            width: 250px;
+        }
+
         .logo {
-            background-color: #AE86C1;
+            background-color: #FFF;
+        }
+
+        .title-container {
+            background-color: #702D1D;
+        }
+
+        .title-container {
+            background-color: #702D1D;
         }
 
         .box-color:nth-child(1) {
-            background-color: #AE86C1;
+            background-color: #702D1D;
         }
 
         .box-color:nth-child(2) {
-            background-color: #6D3FA3;
-        }
-
-        .box-color:nth-child(3) {
-            background-color: #1B1B1B;
-        }
-
-        .box-color:nth-child(4) {
-            background-color: #ffff;
+            background-color: #FFFFFF;
             border: 2px solid #222222;
         }
 
-        .box-color:nth-child(4) .color-text {
+        .box-color:nth-child(3) {
+            background-color: #1A1A1A;
+        }
+
+        /* Changé pour un ton plus "nuit/musée" */
+
+        .box-color:nth-child(2) .color-text {
             color: #222222;
+        }
+
+        .box-color:nth-child(4) {
+            display: none;
         }
 
         h1::selection,
         .title-container span::selection {
             background-color: #FFF;
-            color: #AE86C1;
+            color: #702D1D;
+        }
+
+        .title-container span {
+            --span-bg-color: #ffffff;
+            transition: background-color 0.3s ease;
+        }
+
+        .title-container span.color {
+            --span-bg-color: #702D1D;
         }
     </style>
 </head>
@@ -114,8 +122,8 @@
                 d="M14.5474 0.532836C19.1161 -0.0178072 19.4802 6.74773 15.219 7.04264C10.9579 7.33754 10.739 0.992473 14.5474 0.532836Z"
                 fill="#222222" />
         </svg>
-
     </div>
+
     <header>
         <div class="top-header">
             <button class="button effect-btn" id="open-menu-button">
@@ -205,7 +213,6 @@
                                             fill="#222222" />
                                     </svg>
                                 </a>
-
                             </li>
                         </ul>
                     </nav>
@@ -227,101 +234,101 @@
             </div>
         </div>
     </header>
+
     <script src="../src/js/headerItem.js?v=1.0.0"></script>
+
     <main>
         <div class="container">
             <section class="first-content panel">
                 <div class="img-top"
-                    style="background: url('../src/img/projets/bde/top-img.webp'); background-size: cover; background-position: center;">
+                    style="background: url('../src/img/projets/virtuaile/top-img.webp'); background-size: cover; background-position: center;">
                 </div>
             </section>
             <section class="panel">
                 <div class="title-container">
-                    <h1 class="fade-in">BDE MMI</h1>
-                    <span class="fade-in">BDE MMI</span>
-                    <span class="fade-in">BDE MMI</span>
-                    <span class="fade-in">BDE MMI</span>
-                    <span class="fade-in">BDE MMI</span>
-                    <span class="fade-in">BDE MMI</span>
-                    <span class="fade-in">BDE MMI</span>
-                    <span class="fade-in">BDE MMI</span>
-                    <span class="fade-in">BDE MMI</span>
+                    <h1>Virtu'aile</h1>
+                    <span class="color fade-in">Virtu'aile</span>
+                    <span class="color fade-in">Virtu'aile</span>
+                    <span class="color fade-in">Virtu'aile</span>
+                    <span class="color fade-in">Virtu'aile</span>
+                    <span class="color fade-in">Virtu'aile</span>
+                    <span class="color fade-in">Virtu'aile</span>
+                    <span class="color fade-in">Virtu'aile</span>
+                    <span class="color fade-in">Virtu'aile</span>
                 </div>
             </section>
         </div>
 
-
-
         <section class="info-container lastContainer" id="top-project">
             <div class="flex-title">
                 <h2>Le projet</h2>
+                <a href="https://bacchanight-room.vercel.app/" target="_blank" class="link-project fade-in">Tester
+                    l'expérience
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M18.4853 17.1422H15.4836V5.29459L2.57538 18.2028L0.454059 16.0815L13.3623 3.17327L1.51472 3.17327L1.51472 0.171598H18.4853V17.1422Z"
+                            fill="black" />
+                    </svg>
+                </a>
             </div>
 
             <div class="flex-project-info fade-in">
                 <div class="box-project-info">
                     <h3>Catégories</h3>
                     <div class="inner-box-project-info">
-                        <p>Ux Design</p>
-                        <p>UI Design</p>
-                        <p>Print</p>
-                        <p>Développement web</p>
-                        <p>Communication</p>
+                        <p>UI/UX Design</p>
+                        <p>Développement 3D</p>
+                        <p>Expérience Immersive</p>
                     </div>
                 </div>
                 <div class="box-project-info">
                     <h3>Livrables</h3>
                     <div class="inner-box-project-info">
                         <p>Site web</p>
-                        <p>Affiches</p>
-                        <p>Cartes de visite</p>
-                        <p>Storie</p>
+                        <p>Fresque temps réel</p>
+                        <p>Identité visuelle</p>
                     </div>
                 </div>
                 <div class="box-project-info">
                     <h3>Dates</h3>
-                    <p>2024 - 2025</p>
+                    <p>Mars 2025</p>
                 </div>
                 <div class="box-project-info">
                     <h3>Crédits</h3>
-                    <div class="inner-box-project-info">
-                        <p>Dina RAKOTONARIVO</p>
-                        <p>Edgar QUEMERE</p>
-                        <p>Line CABARET</p>
-                        <p>Louis LE DOUSSAL</p>
-                        <p>Noémie NUNEZ</p>
-                        <p>Thomas RIQUIER (moi)</p>
-                    </div>
+                    <p>Antoine CORBERAND</p>
+                    <p>Alexis JUHEL</p>
+                    <p>Billel TIGHIDET</p>
+                    <p>Edgar QUEMERE</p>
+                    <p>Simon DAGUET--KARGL</p>
+                    <p>Thomas RIQUIER (moi)</p>
                 </div>
             </div>
-            <img class="img-project-info fade-in" src="../src/img/projets/bde/img_project_0.webp"
-                alt="Cartes adhérents - BDE MMI Bordeaux" loading="lazy">
+            <img class="img-project-info fade-in" src="../src/img/projets/virtuaile/img_project_0.webp"
+                alt="Installation Virtu'aile au Musée des Beaux-Arts" loading="lazy">
         </section>
-
 
         <section class="description-container">
             <div class="box-text">
                 <h2>À propos</h2>
                 <p class="scroll-text">
-                    En tant que président du BDE MMI Bordeaux (House of United Brothers) d’avril 2024 à avril 2025, j’ai
-                    eu l’opportunité de moderniser et d’élargir les outils de communication de l’association étudiante.
-                    L’un des principaux projets a été la création d’un site web complet, conçu pour centraliser
-                    toutes les informations du BDE. Ce site, une première pour notre association, propose aux étudiants
-                    un espace dédié où ils peuvent retrouver toutes les informations utiles : soirées, événements,
-                    partenariats, contact, ou encore adhésion.
+                    À l’occasion de la Bacchanight 2025 au Musée des Beaux-Arts de Bordeaux (MusBA), nous avons
+                    imaginé Virtu'aile : une fresque numérique collaborative. L'objectif était de
+                    briser la barrière entre le visiteur et l'œuvre en invitant chacun à devenir créateur le temps d'une
+                    soirée.
                     <br><br>
-                    Développé sur SvelteKit, ce projet visait à refléter l’identité visuelle du BDE en adoptant ses
-                    couleurs et en créant une plateforme intuitive et pratique. En complément du site, j’ai également
-                    travaillé sur des supports de communication variés (stories, posts, affiches) pour promouvoir nos
-                    activités et nos partenaires auprès des étudiants.
+                    Le concept repose sur la création d'une "nouvelle aile" virtuelle pour le musée. Via un pc central,
+                    les visiteurs accèdent à une interface simplifiée leur permettant de sculpter et de
+                    personnaliser une pièce de musée en 3D. Une fois validée, leur création s'envole pour rejoindre une
+                    fresque collective projetée en temps réel dans le musée, formant ainsi une œuvre hybride et
+                    évolutive, reflet de la vision artistique des participants.
                 </p>
             </div>
             <div class="container-flex">
                 <div class="flex-da fade-in">
                     <div class="logo">
-                        <img src="../src/img/projets/bde/logo.webp" alt="Logo BDE MMI Bordeaux" loading="lazy">
+                        <img src="../src/img/projets/virtuaile/logo.webp" alt="Logo Virtu'aile" loading="lazy">
                     </div>
                     <div class="container-color">
-                        <div class="box-color"></div>
                         <div class="box-color"></div>
                         <div class="box-color"></div>
                         <div class="box-color"></div>
@@ -329,75 +336,60 @@
                 </div>
                 <div class="details-container fade-in">
                     <div class="details-box">
-                        <p class="details-title">Typographie</p>
-                        <p class="details-text">Poppins</p>
+                        <p class="details-title">Typographies</p>
+                        <p class="details-text">Actor</p>
                     </div>
                     <div class="details-box">
-                        <p class="details-title">Langage</p>
-                        <p class="details-text">SvelteKit</p>
+                        <p class="details-title">Technologies</p>
+                        <p class="details-text">React / Three.js (Vercel)</p>
                     </div>
                     <div class="details-box">
                         <p class="details-title">Github</p>
-                        <a href="https://github.com/Viturna/hub" target="_blank" class="details-text"
-                            style="text-decoration: underline;">Voir le
-                            projet</a>
+                        <a href="https://github.com/simdgtk/bacchanight-room" target="_blank" class="details-text"
+                            style="text-decoration: underline;">Voir le code</a>
                     </div>
                 </div>
             </div>
 
             <div class="flex-img">
-                <img width="35%" src="../src/img/projets/bde/img_project_1.webp" alt="Affiche pour les cartes adhérents"
-                    class="fade-in" loading="lazy">
-                <img width="60%" src="../src/img/projets/bde/img_project_2.webp"
-                    alt="Page avantange du site BDE MMI Bordeaux" class="fade-in" loading="lazy">
+                <img width="100%" src="../src/img/projets/virtuaile/img_project_1.webp"
+                    alt="Interface mobile Virtu'aile" class="fade-in" loading="lazy">
             </div>
+
             <div class="box-text">
                 <h2>Méthode</h2>
                 <p class="scroll-text">
-                    Pour le site web, j’ai pris en charge l’intégralité du développement. Partant de zéro, j’ai
-                    structuré l’architecture du site avec une navigation claire et accessible, pour répondre aux
-                    attentes des étudiants : une communication efficace et des informations regroupées au même endroit.
-                    Bien que j’aie travaillé seul sur la partie technique, l’équipe du BDE m’a épaulé dans la
-                    conception UI/UX pour garantir que le site corresponde aux besoins et aux goûts des étudiants.
+                    Le plus grand défi de Virtu'aile était l'accessibilité : comment permettre à un visiteur de sculpter
+                    une pièce 3D sans connaissance technique et sans prendre trop de temps ? Nous avons conçu une
+                    interface
+                    ultra-intuitive, utilisant des contrôles simplifiés pour manipuler les objets et couleurs.
                     <br><br>
-                    Le site intègre des fonctionnalités clés, comme une présentation des partenaires du BDE, un
-                    calendrier des événements, un espace pour devenir adhérent, et une section de contact. L’accent a
-                    été mis sur l’ergonomie et la simplicité, afin que chaque étudiant, puisse trouver rapidement ce
-                    qu’il cherche.
+                    Côté développement, nous avons utilisé Three.js pour la gestion du rendu 3D dans le navigateur.
+                    L'enjeu technique majeur a été l'optimisation des performances pour garantir une fluidité totale de
+                    la projection centrale, malgré l'accumulation de dizaines de pièces au fil de l'événement.
                     <br><br>
-                    En parallèle, j’ai contribué à la création de nombreux supports de communication visuels, comme
-                    des affiches pour les événements, des publications pour les réseaux sociaux, ou encore des stories.
-                    Ces supports ont permis de renforcer la communication du BDE et de maintenir un lien constant avec
-                    les étudiants, tout en augmentant la visibilité de nos partenaires.
+                    Enfin, l'identité visuelle a été pensée pour dialoguer avec l'architecture classique du MusBA, tout
+                    en apportant une esthétique numérique moderne.
                 </p>
             </div>
-            <img src="../src/img/projets/bde/img_project_3.webp" alt="Home page du site du BDE MMI Bordeaux"
-                class="fade-in" loading="lazy">
+            <img src="../src/img/projets/virtuaile/img_project_2.webp" alt="Aperçu du rendu 3D" class="fade-in"
+                loading="lazy">
+
             <div class="box-text">
                 <h2>Résultat</h2>
                 <p class="scroll-text">
-                    En centralisant toutes les informations sur une plateforme accessible, nous avons amélioré la
-                    communication du BDE, mais également offert une meilleure visibilité à nos événements et
-                    partenaires. Le site a permis d’élargir notre rayonnement en dehors des réseaux sociaux, touchant
-                    un public plus large et renforçant l’image du BDE.
+                    Lors de la Bacchanight, Virtu'aile a permis à des dizaines de participants de laisser leur
+                    empreinte numérique au musée. La fresque, en constante mutation, a créé un véritable point
+                    d'attraction.
                     <br><br>
-                    Cette expérience a été particulièrement enrichissante pour moi, tant sur le plan technique que
-                    personnel. En tant que président, j’ai appris à gérer une équipe, à coordonner des événements et
-                    à jongler avec plusieurs responsabilités. Ce projet m’a également permis de développer mes
-                    compétences en gestion de projet, en communication, et en développement web, tout en contribuant
-                    activement à la vie étudiante.
+                    Ce projet a été une opportunité majeure de lier UX Design et Creative Coding. Il m'a permis de
+                    pousser mes compétences en développement 3D web tout en gérant les contraintes d'un projet
+                    événementiel : robustesse technique, simplicité d'usage immédiate et impact visuel.
                 </p>
             </div>
+
             <div class="container-flex">
-                <div class="flex-img">
-                    <img width="48%" src="../src/img/projets/bde/img_project_4.webp"
-                        alt="Page Photo du site BDE MMI Bordeaux" class="fade-in" loading="lazy">
-                    <img width="22%" src="../src/img/projets/bde/img_project_5.webp" alt="Storie BDE MMI Bordeaux"
-                        class="fade-in" loading="lazy">
-                    <img width="22%" src="../src/img/projets/bde/img_project_6.webp" alt="Storie BDE MMI Bordeaux"
-                        class="fade-in" loading="lazy">
-                </div>
-                <img src="../src/img/projets/bde/img_project_7.webp" alt="Page avantages du site BDE MMI Bordeaux"
+                <img width="100%" src="../src/img/projets/virtuaile/img_project_3.webp" alt="Projection fresque 3D"
                     class="fade-in" loading="lazy">
             </div>
 
@@ -408,9 +400,8 @@
                             d="M24 12L21.8775 14.1225L13.5 5.745L13.5 24H10.5L10.5 5.745L2.1225 14.1225L0 12L12 0L24 12Z"
                             fill="black" />
                     </svg>
-
                 </a>
-                <a href="./dosetadose.html" class="link-project fade-in">Projet suivant
+                <a href="./viturna.html" class="link-project fade-in">Projet suivant
                     <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M18.456 17.4556H15.4543V5.60806L2.54608 18.5163L0.424762 16.395L13.333 3.48674L1.48542 3.48674L1.48542 0.485074H18.456V17.4556Z"
@@ -420,6 +411,7 @@
             </div>
         </section>
     </main>
+
     <footer>
         <menu class="fade-in dark-bg">
             <a href="../index.html">
@@ -427,18 +419,10 @@
             </a>
             <nav>
                 <ul>
-                    <li>
-                        <a href="../index.html">Accueil</a>
-                    </li>
-                    <li>
-                        <a href="../index.html#apropos">À Propos</a>
-                    </li>
-                    <li>
-                        <a href="../index.html#projets">Projets</a>
-                    </li>
-                    <li>
-                        <a href="../index.html#contact">Contact</a>
-                    </li>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../index.html#apropos">À Propos</a></li>
+                    <li><a href="../index.html#projets">Projets</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
                 </ul>
             </nav>
         </menu>
@@ -458,28 +442,18 @@
                 </a>
             </div>
             <div class="right-part-footer">
-                <a href="https://github.com/Viturna" target="_blank" title="Lien vers mon GitHub">
-                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a href="https://github.com/Viturna" target="_blank"><svg width="36" height="36" viewBox="0 0 36 36"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M17.9349 0.271729C13.6762 0.271905 9.55658 1.78743 6.31306 4.54713C3.06954 7.30683 0.913833 11.1306 0.231648 15.3343C-0.450537 19.538 0.385322 23.8473 2.58966 27.491C4.79401 31.1348 8.22298 33.8754 12.2631 35.2223C13.1598 35.3793 13.4961 34.8412 13.4961 34.3704C13.4961 33.9445 13.4736 32.5321 13.4736 31.03C8.96749 31.8595 7.80172 29.9316 7.44302 28.9227C7.045 27.9416 6.41405 27.0721 5.6047 26.3894C4.97698 26.0531 4.08023 25.2236 5.58226 25.2012C6.15579 25.2635 6.70587 25.463 7.18589 25.783C7.66591 26.103 8.06171 26.534 8.33976 27.0395C8.58506 27.4802 8.9149 27.8681 9.31038 28.1811C9.70586 28.494 10.1592 28.7259 10.6445 28.8633C11.1297 29.0008 11.6373 29.0411 12.1382 28.9821C12.639 28.923 13.1233 28.7657 13.5633 28.5191C13.6409 27.6074 14.0473 26.7549 14.7066 26.1204C10.7161 25.672 6.54628 24.1251 6.54628 17.2651C6.52108 15.4826 7.17881 13.758 8.3846 12.4451C7.8363 10.8959 7.90046 9.19579 8.56395 7.69234C8.56395 7.69234 10.0659 7.22153 13.496 9.53066C16.4307 8.72354 19.5288 8.72354 22.4635 9.53066C25.8935 7.19913 27.3956 7.69234 27.3956 7.69234C28.0592 9.19577 28.1233 10.8959 27.5749 12.4451C28.7843 13.7558 29.4426 15.4819 29.4132 17.2651C29.4132 24.1475 25.2209 25.672 21.2305 26.1204C21.6585 26.5542 21.9881 27.0751 22.197 27.6476C22.4059 28.2201 22.4891 28.8308 22.4411 29.4384C22.4411 31.8372 22.4186 33.7651 22.4186 34.3705C22.4186 34.8413 22.7549 35.4017 23.6516 35.2224C27.6846 33.8645 31.1037 31.1175 33.2987 27.4718C35.4936 23.8262 36.3215 19.5191 35.6346 15.3195C34.9477 11.1199 32.7907 7.30107 29.5486 4.54473C26.3065 1.78839 22.1903 0.273943 17.9349 0.271729Z"
                             fill="#222222" />
-                    </svg>
-                </a>
-                <a href="https://www.linkedin.com/in/thomas-riquier-116043294/" target="_blank"
-                    title="Lien vers mon LinkedIn">
-                    <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    </svg></a>
+                <a href="https://www.linkedin.com/in/thomas-riquier-116043294/" target="_blank"><svg width="36"
+                        height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M33.0074 0.698981H2.63557C2.29416 0.69424 1.95517 0.756798 1.63794 0.883084C1.32071 1.00937 1.03146 1.19691 0.786722 1.43499C0.541981 1.67307 0.346535 1.95704 0.211548 2.27066C0.0765614 2.58428 0.0046766 2.92143 0 3.26284V33.9932C0.0046766 34.3346 0.0765614 34.6718 0.211548 34.9854C0.346535 35.299 0.541981 35.583 0.786722 35.8211C1.03146 36.0592 1.32071 36.2467 1.63794 36.373C1.95517 36.4993 2.29416 36.5618 2.63557 36.5571H33.0074C33.3488 36.5618 33.6878 36.4993 34.005 36.373C34.3223 36.2467 34.6115 36.0592 34.8562 35.8211C35.101 35.583 35.2964 35.299 35.4314 34.9854C35.5664 34.6718 35.6383 34.3346 35.643 33.9932V3.26284C35.6383 2.92143 35.5664 2.58428 35.4314 2.27066C35.2964 1.95704 35.101 1.67307 34.8562 1.43499C34.6115 1.19691 34.3223 1.00937 34.005 0.883084C33.6878 0.756798 33.3488 0.69424 33.0074 0.698981ZM10.8112 30.7122H5.4325V14.5761H10.8112V30.7122ZM8.12186 12.317C7.38007 12.317 6.66866 12.0223 6.14413 11.4978C5.61961 10.9733 5.32493 10.2619 5.32493 9.52008C5.32493 8.77829 5.61961 8.06687 6.14413 7.54235C6.66866 7.01782 7.38007 6.72314 8.12186 6.72314C8.51576 6.67847 8.91464 6.7175 9.29241 6.83768C9.67017 6.95786 10.0183 7.15647 10.314 7.42052C10.6097 7.68456 10.8462 8.00808 11.0082 8.3699C11.1702 8.73171 11.2539 9.12366 11.2539 9.52008C11.2539 9.9165 11.1702 10.3084 11.0082 10.6703C10.8462 11.0321 10.6097 11.3556 10.314 11.6196C10.0183 11.8837 9.67017 12.0823 9.29241 12.2025C8.91464 12.3227 8.51576 12.3617 8.12186 12.317ZM30.2105 30.7122H24.8317V22.0525C24.8317 19.8831 24.0608 18.4667 22.1065 18.4667C21.5017 18.4711 20.9128 18.6608 20.4191 19.0102C19.9254 19.3597 19.5507 19.852 19.3455 20.4209C19.2051 20.8424 19.1444 21.2862 19.1662 21.7298V30.6943H13.7874C13.7874 30.6943 13.7874 16.0283 13.7874 14.5581H19.1662V16.8351C19.6548 15.9873 20.3654 15.2888 21.2216 14.8149C22.0778 14.341 23.047 14.1097 24.0249 14.1458C27.6107 14.1458 30.2105 16.4586 30.2105 21.425V30.7122Z"
                             fill="#222222" />
-                    </svg>
-                </a>
-                <a href="https://www.behance.net/viturna" target="_blank" title="Lien vers mon Behance">
-                    <svg width="37" height="38" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M30.9412 10.3474H23.1249V12.5212H30.972L30.9412 10.3474ZM29.2916 25.3016C28.6986 25.6945 27.9984 25.8938 27.2874 25.872C26.8168 25.921 26.3411 25.8724 25.8901 25.7292C25.4392 25.5859 25.0226 25.3511 24.6666 25.0395C24.0083 24.2931 23.6656 23.3203 23.7108 22.3261H33.9166C33.9902 21.291 33.9017 20.2507 33.6545 19.2428C33.4153 18.2839 32.9969 17.379 32.4212 16.5757C31.8417 15.7966 31.0932 15.1588 30.232 14.7103C29.2738 14.2379 28.2169 14.0001 27.1487 14.0166C26.144 14.0092 25.148 14.2032 24.2195 14.587C23.3693 14.9454 22.5989 15.4695 21.9533 16.1287C21.3094 16.801 20.8109 17.5987 20.4887 18.472C20.1429 19.4148 19.9705 20.4124 19.9799 21.4166C19.9641 22.435 20.1311 23.448 20.4733 24.4074C20.7638 25.2762 21.2251 26.0781 21.8299 26.7661C22.4557 27.4416 23.2248 27.9684 24.0808 28.3078C25.0352 28.6715 26.0504 28.8494 27.0716 28.832C28.5044 28.8767 29.9191 28.5016 31.1416 27.7528C32.3763 26.8754 33.2653 25.5938 33.6545 24.1299H30.2474C30.065 24.6142 29.7294 25.0256 29.2916 25.3016ZM24.0037 18.9499C24.1237 18.5655 24.3228 18.2106 24.5884 17.9079C24.8539 17.6052 25.1799 17.3614 25.5453 17.1924C26.0294 16.9745 26.5564 16.8691 27.087 16.8841C27.4703 16.8513 27.8561 16.9019 28.218 17.0323C28.5799 17.1627 28.9093 17.3698 29.1837 17.6395C29.7075 18.2807 30.0437 19.0544 30.1549 19.8749H23.757C23.782 19.5616 23.8388 19.2517 23.9266 18.9499H24.0037ZM15.8483 18.2099C16.6329 17.8832 17.3147 17.3505 17.8216 16.6682C18.2875 15.9437 18.519 15.0932 18.4845 14.2324C18.5147 13.4474 18.3616 12.6662 18.0374 11.9507C17.765 11.3309 17.3278 10.7976 16.7733 10.4091C16.1853 10.0051 15.5177 9.73176 14.8153 9.6074C13.9841 9.43306 13.1363 9.35034 12.287 9.36073H3.08325V28.7549H12.4874C13.3456 28.7555 14.2005 28.6467 15.0312 28.4312C15.8186 28.2275 16.5645 27.8884 17.2358 27.4291C17.8859 26.9785 18.4154 26.3749 18.7774 25.6716C19.1781 24.885 19.3743 24.0102 19.3478 23.1278C19.377 22.0344 19.0703 20.9583 18.4691 20.0445C17.8225 19.1255 16.8635 18.4734 15.7712 18.2099H15.8483ZM7.35367 12.6753H11.3466C11.7134 12.6749 12.0796 12.7058 12.4412 12.7678C12.7741 12.8172 13.0938 12.9325 13.3816 13.107C13.6596 13.2643 13.8849 13.5003 14.0291 13.7853C14.2076 14.1271 14.2927 14.51 14.2758 14.8953C14.3045 15.2271 14.2537 15.561 14.1277 15.8693C14.0017 16.1777 13.8041 16.4515 13.5512 16.6682C12.9994 17.0475 12.3392 17.2369 11.6703 17.2078H7.35367V12.6753ZM14.8153 24.1453C14.6569 24.4595 14.4174 24.7257 14.1216 24.9162C13.8137 25.1076 13.4745 25.2433 13.1195 25.317C12.7249 25.4053 12.3213 25.4467 11.917 25.4403H7.292V20.1216H11.917C12.7107 20.0868 13.4945 20.3084 14.1524 20.7537C14.4497 21.0204 14.6799 21.3534 14.8246 21.7257C14.9692 22.098 15.0241 22.4991 14.9849 22.8966C15.0266 23.3203 14.9685 23.748 14.8153 24.1453Z"
-                            fill="#222222" />
-                    </svg>
-                </a>
+                    </svg></a>
             </div>
         </div>
         <div class="bottom-footer">
@@ -487,55 +461,12 @@
             <p>Bordeaux • Montauban</p>
         </div>
     </footer>
+
     <script src="../src/js/menu.js?v=1.0.0"></script>
     <script src="../src/js/loader.js?v=1.0.0"></script>
     <script src="../src/js/scrollProject.js?v=1.0.0"></script>
     <script src="../src/js/effectButton.js?v=1.0.0"></script>
     <script src="../src/js/customCursor.js?v=1.0.0"> </script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const boxes = document.querySelectorAll(".box-color");
-
-            // Fonction pour convertir RGB en HEX
-            function rgbToHex(rgb) {
-                const rgbValues = rgb.match(/\d+/g); // Extraire les valeurs R, G, B
-                return `#${rgbValues
-                    .map((val) => parseInt(val).toString(16).padStart(2, "0")) // Convertir en HEX
-                    .join("")}`;
-            }
-
-            boxes.forEach((box) => {
-                // Récupérer la couleur de fond
-                const rgbColor = getComputedStyle(box).backgroundColor;
-                const hexColor = rgbToHex(rgbColor); // Convertir en HEX
-
-                // Créer un élément texte pour afficher la couleur
-                const colorText = document.createElement("div");
-                colorText.classList.add("color-text");
-                colorText.textContent = hexColor;
-                box.appendChild(colorText);
-
-                // Animation GSAP au survol
-                box.addEventListener("mouseenter", () => {
-                    gsap.to(colorText, {
-                        opacity: 1, // Rendre visible
-                        duration: 0.3, // Durée de l'animation
-                        ease: "power1.out",
-                    });
-                });
-
-                box.addEventListener("mouseleave", () => {
-                    gsap.to(colorText, {
-                        opacity: 0, // Rendre invisible
-                        duration: 0.3, // Durée de l'animation
-                        ease: "power1.out",
-                    });
-                });
-            });
-        });
-
-    </script>
     <script src="../src/js/titleEffect.js?v=1.0.0"></script>
     <script src="../src/js/scrollText.js?v=1.0.0"></script>
     <script src="../src/js/linkUnderline.js?v=1.0.0"></script>
